@@ -60,7 +60,7 @@
 
                 <strong>Title:</strong>
 
-                <input type="text" name="name" class="form-control" placeholder="Title">
+                <input type="text" name="title" class="form-control" placeholder="Title">
 
             </div>
 
@@ -72,7 +72,7 @@
 
                 <strong>Description:</strong>
 
-                <textarea class="form-control" style="height:150px" name="detail" placeholder="Description"></textarea>
+                <textarea class="form-control" style="height:150px" name="description" placeholder="Description"></textarea>
 
             </div>
 
