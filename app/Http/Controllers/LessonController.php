@@ -13,7 +13,6 @@ class LessonController extends Controller
      */
     public function index()
     {
-        return 'lesson';
         $lessons = Lesson::latest()->paginate(5);
     
         return view('lessons.index',compact('lessons'))
@@ -39,8 +38,8 @@ class LessonController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
+            'title' => 'required',
+            'description' => 'required',
         ]);
     
         Lesson::create($request->all());
@@ -81,8 +80,8 @@ class LessonController extends Controller
     public function update(Request $request, Lesson $lesson)
     {
         $request->validate([
-            'name' => 'required',
-            'detail' => 'required',
+            'title' => 'required',
+            'description' => 'required',
         ]);
     
         $lesson->update($request->all());
