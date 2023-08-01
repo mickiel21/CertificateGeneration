@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\COntrollers\HomeController;
+use App\Http\COntrollers\UserController;
+use App\Http\COntrollers\LessonController;
+use App\Http\COntrollers\CertificateController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +24,8 @@ Route::get('/', function () {
 Route::get('home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
+
+Route::resource('users', UserController::class);
+Route::resource('lessons', LessonController::class);
+Route::resource('certificates', CertificateController::class);
 
