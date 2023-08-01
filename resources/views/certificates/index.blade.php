@@ -34,7 +34,7 @@
    
                     {{-- <a class="btn btn-info" href="{{ route('certificates.show',$certificate->id) }}">Show</a>--}}
     
-                    <a class="btn btn-primary" href="{{ route('certificates.edit',$certificate->id) }}">Edit</a> 
+                    {{-- <a class="btn btn-primary" href="{{ route('certificates.edit',$certificate->id) }}">Edit</a>  --}}
 
                     <a class="btn btn-primary" href="{{ route('certificates.generate',$certificate->id) }}">Generate</a>
    
