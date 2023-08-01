@@ -29,6 +29,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('users', UserController::class);
     Route::resource('lessons', LessonController::class);
     Route::resource('certificates', CertificateController::class);
+    Route::get('certificates/generate/{id}', [CertificateController::class, 'generate'])->name('certificates.generate');
     
 });
 

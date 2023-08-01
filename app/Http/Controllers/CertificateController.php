@@ -13,9 +13,9 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        $lessons = Certificate::latest()->paginate(5);
-      
-        return view('certificates.index',compact('lessons'))
+        $certificates = Certificate::latest()->paginate(5);
+
+        return view('certificates.index',compact('certificates'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
@@ -83,5 +83,9 @@ class CertificateController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function generate($id){
+        return $id;
     }
 }
