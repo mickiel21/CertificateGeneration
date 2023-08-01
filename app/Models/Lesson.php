@@ -10,6 +10,11 @@ class Lesson extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'title',
+        'description'
+    ];
+    
      // Define the relationship to certificates
      public function certificates()
      {
