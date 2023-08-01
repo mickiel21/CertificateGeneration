@@ -13,6 +13,7 @@ class LessonController extends Controller
      */
     public function index()
     {
+        return 'lesson';
         $lessons = Lesson::latest()->paginate(5);
     
         return view('lessons.index',compact('lessons'))

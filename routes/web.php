@@ -25,7 +25,10 @@ Route::get('home', [HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 
-Route::resource('users', UserController::class);
-Route::resource('lessons', LessonController::class);
-Route::resource('certificates', CertificateController::class);
+Route::group(['middleware' => 'auth'], function () {
+    Route::resource('users', UserController::class);
+    Route::resource('lessons', LessonController::class);
+    Route::resource('certificates', CertificateController::class);
+    
+});
 
