@@ -5,9 +5,9 @@
             <div class="pull-left">
                 <h2>Certificates</h2>
             </div>
-            <div class="pull-right">
+            {{-- <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('certificates.create') }}"> Create New Certificate</a>
-            </div>
+            </div> --}}
         </div>
     </div>
    

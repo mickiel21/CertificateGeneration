@@ -43,8 +43,11 @@ $ 6. php artisan migrate --seed
 
 1. Authentication - Login - Logout - Register
 
-2. Crud 
+2. Simple Crud with MYSQL Database
 
-3. Generate Certificate
+3. Certificate Generation
+
+4. Add Seeder and migration script for test data. 
+
 
 ```
