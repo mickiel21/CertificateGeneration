@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\Certificate;
 class CertificateController extends Controller
 {
     /**
@@ -13,7 +13,10 @@ class CertificateController extends Controller
      */
     public function index()
     {
-        //
+        $lessons = Certificate::latest()->paginate(5);
+      
+        return view('certificates.index',compact('lessons'))
+            ->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     /**

@@ -11,6 +11,11 @@ class Certificate extends Model
 {
     use HasFactory;
 
+    protected $fillable = [
+        'user_id',
+        'lesson_id',
+    ];
+
     // Define the relationship to users and lessons
     public function user()
     {
