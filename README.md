@@ -27,7 +27,7 @@ $ 6. php artisan migrate --seed
 
 | Third Party Packages (Development) | Version  | -   | Third Party Packages | Version |
 | ---------------------------------- | -------- | --- | -------------------- | ------- |
-| barryvdh/laravel-dompdf                        
+| barryvdh/laravel-dompdf            |  ^2.0    |         
 
 ### Scripts
 
@@ -37,3 +37,14 @@ $ 6. php artisan migrate --seed
 | npm run build     | Starts a development server locally |
 | npm run prod      | Minified files for production       |
 | php artisan serve | Run backend server                  |
+
+```sh
+### Functionality
+
+1. Authentication - Login - Logout - Register
+
+2. Crud 
+
+3. Generate Certificate
+
+```
